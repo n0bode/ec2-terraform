@@ -79,5 +79,6 @@ resource "aws_instance" "maquina"{
     }
     associate_public_ip_address = true
     
-    user_data = file("./push.sh")
+    user_data_base64 = base64encode("${file("push.sh")}")
+    user_data_replace_on_change = true
 }
