@@ -7,4 +7,4 @@ git clone https://github.com/n0bode/ec2-terraform.git
 cd ec2-terraform
 sudo pip3 install -r requirements.txt
 sudo chmod +x service.sh
-sudo ./service.sh
+sudo bash ./service.sh
